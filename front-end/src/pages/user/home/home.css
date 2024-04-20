@@ -1,0 +1,6 @@
+.primary-card-wrapper {
+  padding: 20px;
+  background-color: rgb(194, 207, 207);
+  display: flex;
+  justify-content: space-around;
+}

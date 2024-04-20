@@ -1,0 +1,11 @@
+.primary-card {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+  max-height: 300px;
+  border: 1px solid;
+}
+.primary-card h1 {
+  font-size: medium;
+}
