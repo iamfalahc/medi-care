@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../../components/navbar/Navbar";
-import PrimaryCard from "../../../components/primary-card/PrimaryCard";
+import PrimaryCard from "../../../components/service-card/PrimaryCard";
 import primaryCardData from "../../../dummyDatas/userData";
 import "./home.css";
 
@@ -17,6 +17,7 @@ const Home = () => {
                 image={data.image}
                 title={data.title}
                 subtitle={data.subTitle}
+                id={data.id}
               />
             </div>
           );
