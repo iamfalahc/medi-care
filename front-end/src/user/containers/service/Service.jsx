@@ -1,16 +1,16 @@
 import React from "react";
 import "./service.css";
-import primaryCardData from "../../../dummyDatas/userData";
-import PrimaryCard from "../../../components/service-card/ServiceCard"
+import {serviceCardData} from "../../../dummyDatas/userData";
+import ServiceCard from "../../../components/service-card/ServiceCard";
 
-const Container1 = () => {
+const Service = () => {
   return (
     <div>
       <div className="primary-card-wrapper">
-        {primaryCardData.map((data) => {
+        {serviceCardData.map((data) => { 
           return (
             <div>
-              <PrimaryCard key={data.id} data={data} />
+              <ServiceCard key={data.id} data={data} />
             </div>
           );
         })}
@@ -19,4 +19,4 @@ const Container1 = () => {
   );
 };
 
-export default Container1;
+export default Service;
