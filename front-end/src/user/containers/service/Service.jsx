@@ -6,7 +6,7 @@ import ServiceCard from "../../../components/service-card/ServiceCard";
 const Service = () => {
   return (
     <div>
-      <div className="primary-card-wrapper">
+      <div className="service-card-wrapper">
         {serviceCardData.map((data) => { 
           return (
             <div>

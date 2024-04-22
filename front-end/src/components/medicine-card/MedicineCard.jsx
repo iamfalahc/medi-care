@@ -5,19 +5,19 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 
-export default function SpecialtyCard({specialtyData}) {
+export default function MedicineCard({medicineData}) {
   return (
     <Card sx={{ maxWidth: 200 }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="185"
-          image={specialtyData.image}
+          image={medicineData.image}
           alt="green iguana"
         />
         <CardContent>
           <Typography gutterBottom variant="span" component="div" >
-            {specialtyData.title}
+            {medicineData.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
           </Typography>

@@ -2,37 +2,77 @@ export const serviceCardData = [
   {
     id: 1,
     image:
-      "https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png",
+      "https://i.pinimg.com/564x/5e/66/e4/5e66e464044b46aaf4dd383144ee308d.jpg",
     title: "Instant video consultation",
     subTitle: "Connect with doctors",
   },
   {
     id: 2,
     image:
-      "https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png",
-    title: "Clinic facilities",
-    subTitle: "Connect with doctors",
+      "https://media.istockphoto.com/id/851916612/vector/poster-city-landscape-with-fast-delivery-man-scooter-with-packages.jpg?s=612x612&w=0&k=20&c=f81NBEKmPuhzacnP9p6Kq4wlwyWDFDKauC6ZkbUXBxk=",
+    title: "Online medicines",
+    subTitle: "Buy medicines online",
   },
+];
+export const specialtyCardData = [
+  {
+    id: 1,
+    image:
+      "https://i.pinimg.com/564x/33/a8/19/33a8196653efa282de03099b7d48dd74.jpg",
+    title: "Acne , pimples or skin issues",
+    subTitle: "",
+  },
+  {
+    id: 2,
+    image:
+      "https://i.pinimg.com/564x/b5/e7/db/b5e7db619ad464cc016acc8be5edf6c4.jpg",
+    title: "Cold , cough , fever or not feeling well",
+    subTitle: "",
+  },
+
   {
     id: 3,
     image:
-      "https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png",
-    title: "Medicines",
-    subTitle: "Connect with doctors",
+      "https://i.pinimg.com/736x/80/0c/a3/800ca3d3d1c4c4241f2b920d1eda6897.jpg",
+    title: "Spotting Dental Dilemmas",
+    subTitle: "",
   },
   {
     id: 4,
     image:
-      "https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png",
-    title: "Laborataries",
-    subTitle: "Connect with doctors",
+      "https://i.pinimg.com/564x/94/e5/fc/94e5fc10d9313dd112ab3e8a583c2690.jpg",
+    title: "Anxiety , stress or depression",
+    subTitle: "",
   },
 ];
-export const specialtyCardData = [
-  { id: 1, image: "https://thumbs.dreamstime.com/b/face-care-acne-cream-skin-beauty-man-clean-his-regulary-to-stop-isolated-flat-vector-illustration-134010612.jpg", title: "Spotting Dental Dilemmas", subTitle: "" },
-  { id: 2, image: "https://cdn2.vectorstock.com/i/1000x1000/80/86/man-sick-with-fever-and-thermometer-covid19-vector-30588086.jpg", title: "Cold cough or fever", subTitle: "" },
-  { id: 3, image: "https://i.pinimg.com/originals/02/8a/c3/028ac3afc7e4e9853aa2e66e3ff71374.jpg", title: "Child feeling not well", subTitle: "" },
-  { id: 4, image: "https://i.pinimg.com/736x/80/0c/a3/800ca3d3d1c4c4241f2b920d1eda6897.jpg", title: "Spotting Dental Dilemmas", subTitle: "" },
-  { id: 5, image: "https://awakenchiroco.com/wp-content/uploads/2018/09/managing-work-related-stress-1200x1200.jpg", title: "Anxiety or depression", subTitle: "" },
-];
+export const medicineCardData = [
+  {
+    id: 1,
+    image:
+      "https://i.pinimg.com/564x/33/a8/19/33a8196653efa282de03099b7d48dd74.jpg",
+    title: "Acne pimples or skin issues",
+    subTitle: "",
+  },
+  {
+    id: 2,
+    image:
+      "https://i.pinimg.com/564x/33/a8/19/33a8196653efa282de03099b7d48dd74.jpg",
+    title: "Cold cough or fever",
+    subTitle: "",
+  },
+  {
+    id: 3,
+    image:
+      "https://i.pinimg.com/564x/33/a8/19/33a8196653efa282de03099b7d48dd74.jpg",
+    title: "Child feeling not well",
+    subTitle: "",
+  },
+  {
+    id: 4,
+    image:
+      "https://i.pinimg.com/564x/33/a8/19/33a8196653efa282de03099b7d48dd74.jpg",
+    title: "Spotting Dental Dilemmas",
+    subTitle: "",
+  },
 
+];

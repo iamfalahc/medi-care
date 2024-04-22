@@ -1,6 +1,5 @@
-.primary-card-wrapper {
-    padding: 20px;
-    background-color: rgb(194, 207, 207);
-    display: flex;
-    justify-content: space-around;
-  }
+.service-card-wrapper {
+  padding: 50px 20px 20px;
+  display: flex;
+  justify-content: space-around;
+}

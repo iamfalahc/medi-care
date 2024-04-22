@@ -1,13 +1,17 @@
 import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import "./home.css";
-import Container1 from "../containers/service/Service";
+import Service from "../containers/service/Service";
+import Specialty from "../containers/speciality/Specialty";
+import Medicine from "../containers/medicine/Medicine";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-    <Container1/>
+    <Service/>
+    <Specialty/>
+    <Medicine/>
     </div>
   );
 };
