@@ -1,0 +1,7 @@
+.category-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 40px;
+  gap: 20px;
+  justify-content: space-around;
+}

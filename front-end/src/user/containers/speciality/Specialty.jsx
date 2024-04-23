@@ -18,7 +18,7 @@ const Specialty = () => {
         })}
       </div>
       <Link to={'/specialty'}><div class="d-grid gap-2">
-        <button class="btn btn-outline-primary" type="button">
+        <button class="btn btn-primary" type="button">
           View all specialties
         </button>
         </div></Link>

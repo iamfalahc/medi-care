@@ -18,7 +18,7 @@ const Medicine = () => {
         })}
       </div>
      <Link to={"/medicine"}> <div class="d-grid gap-2">
-        <button class="btn btn-outline-primary" type="button">
+        <button class="btn btn-primary" type="button">
           View all medicines
         </button>
       </div></Link>

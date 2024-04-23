@@ -50,7 +50,7 @@ export const medicineCardData = [
     id: 1,
     image:
       "https://i.pinimg.com/564x/33/a8/19/33a8196653efa282de03099b7d48dd74.jpg",
-    title: "Acne pimples or skin issues",
+    title: "Acne pimples",
     subTitle: "",
   },
   {
@@ -71,8 +71,49 @@ export const medicineCardData = [
     id: 4,
     image:
       "https://i.pinimg.com/564x/33/a8/19/33a8196653efa282de03099b7d48dd74.jpg",
-    title: "Spotting Dental Dilemmas",
+    title: "Spotting ",
     subTitle: "",
   },
-
+];
+export const doctorsCardData = [
+  {
+    id: 1,
+    image:
+      "https://i.pinimg.com/564x/89/cb/bc/89cbbc6e5290e32f41caa9d0300b5db1.jpg",
+    doctorName: "Mathew",
+    specialty: "specialty",
+    qualification:"MBBS,MD",
+    experience:"5 Years",
+    charge:"500 Rs"
+  },
+  {
+    id: 2,
+    image:
+      "https://i.pinimg.com/564x/c1/a4/13/c1a413ec0b9569a05fc0ed7de7bce659.jpg",
+    doctorName: "Mathew",
+    specialty: "specialty",
+    qualification:"MBBS,MD",
+    experience:"5 Years",
+    charge:"500 Rs"
+  },
+  {
+    id: 3,
+    image:
+      "https://i.pinimg.com/564x/89/cb/bc/89cbbc6e5290e32f41caa9d0300b5db1.jpg",
+    doctorName: "Mathew",
+    specialty: "specialty",
+    qualification:"MBBS,MD",
+    experience:"5 Years",
+    charge:"500 Rs"
+  },
+  {
+    id: 4,
+    image:
+      "https://i.pinimg.com/564x/c1/a4/13/c1a413ec0b9569a05fc0ed7de7bce659.jpg",
+    doctorName: "Mathew",
+    specialty: "specialty",
+    qualification:"MBBS,MD",
+    experience:"5 Years",
+    charge:"500 Rs"
+  },
 ];

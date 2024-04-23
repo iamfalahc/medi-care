@@ -1,0 +1,11 @@
+.consult{
+    width: 100%;
+}
+.doctor-info{
+    display: flex;
+    flex-direction: column;
+}
+.card-img-top{
+height: 250px;
+object-fit:unset;
+}
