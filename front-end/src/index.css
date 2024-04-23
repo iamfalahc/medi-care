@@ -2,3 +2,6 @@ a {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit the color from the parent */
   }
+  body{
+    background-color: rgb(251, 251, 251);
+  }

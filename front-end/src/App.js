@@ -5,6 +5,7 @@ import Home from "./user/home/Home";
 import Category from "./user/category/Category";
 import Specialties from "./user/specialties/Specialties";
 import Medicines from "./user/medicines/Medicines";
+import Form from "./user/form/Form";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route>
             <Route path="/category/:id" Component={Category} />
+          </Route>
+          <Route>
+            <Route path="/form" Component={Form} />
           </Route>
         </Routes>
       </BrowserRouter>

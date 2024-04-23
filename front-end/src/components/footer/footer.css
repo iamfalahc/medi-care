@@ -5,6 +5,7 @@
   }
   .footer-top {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 84px;
@@ -39,7 +40,9 @@
       justify-content: center;
       align-items: center;
       padding-bottom: 10px;
+      flex-wrap: wrap;
   }
   .footer-middle span{
     color: white;
-  }
+  } 
+    
