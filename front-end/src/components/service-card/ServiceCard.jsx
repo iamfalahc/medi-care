@@ -1,9 +1,18 @@
 import React from 'react';
-import "./service-card.css"
+import { Navigate,useNavigate } from 'react-router-dom';
 
 export default function ServiceCard({data}) {
+  const navigate = useNavigate()
+const handleNavigate=(id)=>{
+  if (id===1) {
+    navigate("/specialty")
+  }else if(id===2){
+    navigate("/medicine")
+  }
+}
+
   return (
-<div class="card mb-3" style={{ maxWidth: "540px" }}>
+<div class="card mb-3" style={{ maxWidth: "540px" }} onClick={()=>handleNavigate(data.id)}>
   <div class="row g-0">
     <div class="col-md-4">
       <img src={data.image} class="img-fluid rounded-start" alt="..."/>

@@ -1,11 +1,11 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import * as React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { CardActionArea } from "@mui/material";
 
-export default function MedicineCard({medicineData}) {
+export default function MedicineCard({ medicineData }) {
   return (
     <Card sx={{ maxWidth: 200 }}>
       <CardActionArea>
@@ -16,11 +16,10 @@ export default function MedicineCard({medicineData}) {
           alt="green iguana"
         />
         <CardContent>
-          <Typography gutterBottom variant="span" component="div" >
+          <Typography gutterBottom variant="span" component="div">
             {medicineData.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-          </Typography>
+          <Typography variant="body2" color="text.secondary"></Typography>
         </CardContent>
       </CardActionArea>
     </Card>

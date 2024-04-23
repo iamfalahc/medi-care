@@ -1,0 +1,21 @@
+.container-wrapper{
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+}
+.container-card-wrapper {
+  padding: 40px 40px 0px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-around;
+}
+.d-grid {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.container-wrapper span {
+    font-size: medium;
+    padding: 50px 75px 0px;
+    font-weight: 600;
+    }

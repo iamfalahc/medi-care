@@ -4,10 +4,12 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import {navigate,useNavigate} from "react-router-dom"
 
 export default function SpecialtyCard({specialtyData}) {
+    const navigate = useNavigate()
   return (
-    <Card sx={{ maxWidth: 200 }}>
+    <Card sx={{ maxWidth: 200 }}onClick={()=>navigate({pathname:"/category/"+specialtyData.id})} >
       <CardActionArea>
         <CardMedia
           component="img"
