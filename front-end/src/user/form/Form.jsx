@@ -3,7 +3,8 @@ import "./form.css";
 
 const Form = () => {
   return (
-    <div className="form-wrapper">
+ <div className="form-container">
+       <div className="field-wrapper">
         <h1>Patient's details</h1>
         <div className="form-floating mb-3">
           <textarea
@@ -45,6 +46,7 @@ const Form = () => {
           Proceed to pay
         </button>
       </div>
+ </div>
    
   );
 };

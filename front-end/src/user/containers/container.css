@@ -1,7 +1,7 @@
-.container-wrapper{
-    margin-bottom: 35px;
-    display: flex;
-    flex-direction: column;
+.container-wrapper {
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
 }
 .container-card-wrapper {
   padding: 40px 40px 0px 40px;
@@ -16,7 +16,17 @@
   margin-top: 25px;
 }
 .container-wrapper span {
-    font-size: medium;
-    padding: 50px 75px 0px;
-    font-weight: 600;
-    }
+  font-size: medium;
+  padding: 50px 75px 0px;
+  font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+  .container-card-wrapper{
+    padding: 0 7px 7px ;
+    gap: 30px;
+  }
+  .container-wrapper span{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  }

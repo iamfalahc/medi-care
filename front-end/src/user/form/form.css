@@ -1,6 +1,21 @@
-.form-wrapper{
-    padding: 40px 400px 60px 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.field-wrapper {
+  width: 40%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .field-wrapper {
+    width: 90%;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
 }

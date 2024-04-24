@@ -19,7 +19,7 @@ export default function MedicineCard({ medicineData }) {
           <Typography gutterBottom variant="span" component="div">
             {medicineData.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary"><button class="btn btn-primary consult" type="button">
+          <Typography variant="body2" color="text.secondary"><button className="btn btn-primary consult" type="button">
           Buy Now
         </button></Typography>
         </CardContent>

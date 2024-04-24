@@ -11,14 +11,14 @@ const Medicine = () => {
       <div className="container-card-wrapper">
         {medicineCardData.map((data) => {
           return (
-            <div>
+            <div key={data.id}>
               <MedicineCard medicineData={data} />
             </div>
           );
         })}
       </div>
-     <Link to={"/medicine"}> <div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">
+     <Link to={"/medicine"}> <div className="d-grid gap-2">
+        <button className="btn btn-primary" type="button">
           View all medicines
         </button>
       </div></Link>

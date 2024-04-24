@@ -13,7 +13,7 @@ const Specialties = () => {
       <div className="container-card-wrapper">
         {specialtyCardData.map((data) => {
           return (
-            <div>
+            <div key={data.id}>
               <SpecialtyCard specialtyData={data} />
             </div>
           );

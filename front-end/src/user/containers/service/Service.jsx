@@ -9,8 +9,8 @@ const Service = () => {
       <div className="service-card-wrapper">
         {serviceCardData.map((data) => { 
           return (
-            <div>
-              <ServiceCard key={data.id} data={data} />
+            <div key={data.id}>
+              <ServiceCard  data={data} />
             </div>
           );
         })}

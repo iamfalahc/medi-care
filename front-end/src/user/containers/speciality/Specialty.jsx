@@ -11,14 +11,14 @@ const Specialty = () => {
       <div className="container-card-wrapper">
         {specialtyCardData.map((data) => {
           return (
-            <div>
+            <div key={data.id}> 
               <SpecialtyCard specialtyData={data} />
             </div>
           );
         })}
       </div>
-      <Link to={'/specialty'}><div class="d-grid gap-2">
-        <button class="btn btn-primary" type="button">
+      <Link to={'/specialty'}><div className="d-grid gap-2">
+        <button className="btn btn-primary" type="button">
           View all specialties
         </button>
         </div></Link>

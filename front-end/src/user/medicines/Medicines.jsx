@@ -13,7 +13,7 @@ const Medicines = () => {
       <div className="container-card-wrapper">
         {medicineCardData.map((data) => {
           return (
-            <div>
+            <div key={data.id}>
               <MedicineCard medicineData={data} />
             </div>
           );
