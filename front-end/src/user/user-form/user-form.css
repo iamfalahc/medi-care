@@ -13,8 +13,8 @@
     gap: 10px;
   }
   @media only screen and (max-width: 600px) {
-    .field-wrapper {
-      width: 90%;
+    .user-field-wrapper {
+      width: 70%;
       gap: 30px;
       margin-bottom: 30px;
     }

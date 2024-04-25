@@ -49,28 +49,28 @@ export const medicineCardData = [
   {
     id: 1,
     image:
-      "https://i.pinimg.com/564x/33/a8/19/33a8196653efa282de03099b7d48dd74.jpg",
+      "https://rukminim2.flixcart.com/image/312/312/xif0q/vitamin-supplement/k/n/c/200-skin-glow-marine-collagen-for-glowing-skin-wrinkle-free-original-imahy9myza5gyeyp.jpeg?q=70&crop=false",
     title: "Acne pimples",
     subTitle: "",
   },
   {
     id: 2,
     image:
-      "https://i.pinimg.com/564x/33/a8/19/33a8196653efa282de03099b7d48dd74.jpg",
+      "https://rukminim2.flixcart.com/image/312/312/xif0q/ayurvedic/o/f/1/pure-himalayan-shilajit-30-gummies-tamarind-flavour-strength-original-imagvbs7da7hyhwy.jpeg?q=70&crop=false",
     title: "Cold cough or fever",
     subTitle: "",
   },
   {
     id: 3,
     image:
-      "https://i.pinimg.com/564x/33/a8/19/33a8196653efa282de03099b7d48dd74.jpg",
+      "https://rukminim2.flixcart.com/image/612/612/xif0q/vitamin-supplement/k/w/v/-original-imagzrugmgwvfmcp.jpeg?q=70",
     title: "Child feeling not well",
     subTitle: "",
   },
   {
     id: 4,
     image:
-      "https://i.pinimg.com/564x/33/a8/19/33a8196653efa282de03099b7d48dd74.jpg",
+      "https://rukminim2.flixcart.com/image/612/612/xif0q/vitamin-supplement/2/a/m/100-spirulina-powder-100-pure-natural-for-immunity-digestion-original-imagxydpwghkrb6u.jpeg?q=70",
     title: "Spotting ",
     subTitle: "",
   },

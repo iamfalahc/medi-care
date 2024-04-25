@@ -1,53 +1,106 @@
-import React from "react";
+import React, { useState } from "react";
 import "./user-form.css";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const Form = () => {
+  const [input, setInput] = useState({
+    name: "",
+    age: "",
+    gender: "",
+    place: "",
+    mobileNumber: "",
+    date: "",
+  });
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setInput({ ...input, [name]: value });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(input);
+    // Add your submission logic here
+    toast.success("Appointment booked successfully!");
+  };
+
   return (
- <div className="user-form-container">
-       <div className="user-field-wrapper">
+    <div className="user-form-container">
+      <form className="user-field-wrapper" onSubmit={handleSubmit}>
         <h1>Patient's details</h1>
         <div className="form-floating mb-3">
-          <textarea
+          <input
+            type="text"
             className="form-control"
-            placeholder="Leave a comment here"
-          ></textarea>
-          <label for="floatingTextareaDisabled">Patient's name . . .</label>
+            placeholder="Name . . ."
+            name="name"
+            value={input.name}
+            onChange={handleChange}
+          />
+          <label htmlFor="patient-name">Name . . .</label>
         </div>
         <div className="form-floating mb-3">
-          <textarea
+          <input
+            type="text"
             className="form-control"
-            placeholder="Leave a comment here"
-          ></textarea>
-          <label for="floatingTextareaDisabled">Patient's age . . .</label>
+            placeholder="Age . . ."
+            name="age"
+            value={input.age}
+            onChange={handleChange}
+          />
+          <label htmlFor="patient-age">Age . . .</label>
         </div>
         <div className="form-floating mb-3">
-          <textarea
+          <input
+            type="text"
             className="form-control"
-            placeholder="Leave a comment here"
-          ></textarea>
-          <label for="floatingTextareaDisabled">Gender . . .</label>
+            placeholder="Gender . . ."
+            name="gender"
+            value={input.gender}
+            onChange={handleChange}
+          />
+          <label htmlFor="patient-gender">Gender . . .</label>
         </div>
         <div className="form-floating mb-3">
-          <textarea
+          <input
+            type="text"
             className="form-control"
-            placeholder="Leave a comment here"
-          ></textarea>
-          <label for="floatingTextareaDisabled">Age . . .</label>
+            placeholder="Place . . ."
+            name="place"
+            value={input.place}
+            onChange={handleChange}
+          />
+          <label htmlFor="patient-place">Place . . .</label>
         </div>
         <div className="form-floating mb-3">
-          <textarea
+          <input
+            type="text"
             className="form-control"
-            placeholder="Leave a comment here"
-           
-          ></textarea>
-          <label for="floatingTextareaDisabled">Mobile number . . .</label>
+            placeholder="Mobile number . . ."
+            name="mobileNumber"
+            value={input.mobileNumber}
+            onChange={handleChange}
+          />
+          <label htmlFor="patient-mobile">Mobile number . . .</label>
         </div>
-        <button class="btn btn-primary" type="button">
-          Proceed to pay
+        <div className="form-floating mb-3">
+          <input
+            type="date"
+            className="form-control"
+            id="patient-date"
+            name="date"
+            value={input.date}
+            onChange={handleChange}
+          />
+        </div>
+        <button className="btn btn-primary booking" type="submit">
+          Book an appointment
         </button>
-      </div>
- </div>
-   
+      </form>
+      <ToastContainer />
+    </div>
   );
 };
 

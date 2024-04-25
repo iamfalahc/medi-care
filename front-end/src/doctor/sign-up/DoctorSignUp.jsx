@@ -1,4 +1,3 @@
-
 import * as React from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
@@ -10,23 +9,10 @@ import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-import Snackbar from "@mui/material/Snackbar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 function DoctorSignUp() {
-  const [openSnackbar, setOpenSnackbar] = React.useState(false);
-  const [snackbarMessage, setSnackbarMessage] = React.useState("");
-
   const defaultTheme = createTheme();
-
-  const handleOpenSnackbar = (message) => {
-    setSnackbarMessage(message);
-    setOpenSnackbar(true);
-  };
-
-  const handleCloseSnackbar = () => {
-    setOpenSnackbar(false);
-  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -39,20 +25,13 @@ function DoctorSignUp() {
       fees: data.get("fees"),
       email: data.get("email"),
       password: data.get("password"),
+      image: data.get("image"),
     });
-    handleOpenSnackbar("Form submitted successfully!");
   };
-
   return (
-    
     <ThemeProvider theme={defaultTheme}>
       <CssBaseline />
-      <Snackbar
-        open={openSnackbar}
-        autoHideDuration={6000}
-        onClose={handleCloseSnackbar}
-        message={snackbarMessage}
-      />
+
       <Container component="main" maxWidth="xs">
         <Box
           sx={{
@@ -125,6 +104,7 @@ function DoctorSignUp() {
                   class="form-control"
                   type="file"
                   id="formFile"
+                  name="image"
                   style={{ padding: "3%" }}
                 />
               </div>
@@ -163,14 +143,17 @@ function DoctorSignUp() {
                 />
               </Grid>
             </Grid>
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
-            >
-              Sign Up
-            </Button>
+            <Link to={"/doctor-home"}>
+              {" "}
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                sx={{ mt: 3, mb: 2 }}
+              >
+                Sign Up
+              </Button>
+            </Link>
             <Grid container justifyContent="center">
               <Grid item>
                 <Link to={"/doctor-login"} variant="body2">

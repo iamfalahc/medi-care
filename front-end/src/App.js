@@ -8,6 +8,7 @@ import Medicines from "./user/medicines/Medicines";
 import UserForm from "./user/user-form/UserForm";
 import DoctorSignUp from "./doctor/sign-up/DoctorSignUp";
 import DoctorLogin from "./doctor/login/DoctorLogin";
+import DoctorHome from "./doctor/home/DoctorHome";
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
           </Route>
           <Route>
             <Route path="/doctor-login" Component={DoctorLogin} />
+          </Route>
+          <Route>
+            <Route path="/doctor-home" Component={DoctorHome} />
           </Route>
         </Routes>
       </BrowserRouter>
