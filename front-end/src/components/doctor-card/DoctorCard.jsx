@@ -11,7 +11,7 @@ const DoctorCard = ({ data }) => {
         <span class="card-text">{data.qualification}.</span>
         <span class="card-text">{data.experience}.</span>
         <span class="card-text">{data.charge}.</span>
-        <Link to={"/form"}>
+        <Link to={"/user-form"}>
           <button class="btn btn-primary consult" type="button">
             Consult now
           </button>

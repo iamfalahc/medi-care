@@ -27,7 +27,7 @@ function Login(props) {
 
 const defaultTheme = createTheme();
 
-export default function SignIn() {
+export default function DoctorLogin() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -86,8 +86,8 @@ export default function SignIn() {
             </Button>
             <Grid container justifyContent="center">
               <Grid item>
-                <Link to={""} variant="body2">
-                  {"Don't have an account? Sign Up"}
+                <Link to={"/join as a doctor"} variant="body2">
+                  <span style={{color:"blue"}}>Don't have an account? Sign Up</span>
                 </Link>
               </Grid>
             </Grid>

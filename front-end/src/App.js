@@ -1,11 +1,13 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from "./components/login/Login";
-import Signup from "./components/signup/Signup";
+import UserLogin from "../src/user/login-or-signup/UserLogin";
+import UserSignup from "../src/user/login-or-signup/UserSignup";
 import Home from "./user/home/Home";
 import Category from "./user/category/Category";
 import Specialties from "./user/specialties/Specialties";
 import Medicines from "./user/medicines/Medicines";
-import Form from "./user/form/Form";
+import UserForm from "./user/user-form/UserForm";
+import DoctorSignUp from "./doctor/sign-up/DoctorSignUp";
+import DoctorLogin from "./doctor/login/DoctorLogin";
 
 function App() {
   return (
@@ -13,10 +15,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route>
-            <Route path="/login" Component={Login} />
+            <Route path="/login" Component={UserLogin} />
           </Route>
           <Route>
-            <Route path="/signup" Component={Signup} />
+            <Route path="/signup" Component={UserSignup} />
           </Route>
           <Route>
             <Route path="/" Component={Home} />
@@ -31,7 +33,13 @@ function App() {
             <Route path="/category/:id" Component={Category} />
           </Route>
           <Route>
-            <Route path="/form" Component={Form} />
+            <Route path="/user-form" Component={UserForm} />
+          </Route>
+          <Route>
+            <Route path="/join as a doctor" Component={DoctorSignUp} />
+          </Route>
+          <Route>
+            <Route path="/doctor-login" Component={DoctorLogin} />
           </Route>
         </Routes>
       </BrowserRouter>

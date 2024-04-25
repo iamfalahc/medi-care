@@ -1,10 +1,10 @@
 import React from "react";
-import "./form.css";
+import "./user-form.css";
 
 const Form = () => {
   return (
- <div className="form-container">
-       <div className="field-wrapper">
+ <div className="user-form-container">
+       <div className="user-field-wrapper">
         <h1>Patient's details</h1>
         <div className="form-floating mb-3">
           <textarea
