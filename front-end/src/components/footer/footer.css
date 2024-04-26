@@ -1,7 +1,8 @@
 .footer {
-    padding: 30px;
+    padding: 10px;
     background-color: #1976d2;
     text-align: center;
+
   }
   .footer-top {
     display: flex;

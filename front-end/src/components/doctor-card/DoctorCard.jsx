@@ -13,7 +13,7 @@ const DoctorCard = ({ data }) => {
         <span class="card-text">{data.charge}.</span>
         <Link to={"/user-form"}>
           <button class="btn btn-primary consult" type="button">
-            Consult now
+            Book now
           </button>
         </Link>
       </div>

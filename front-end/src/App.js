@@ -9,6 +9,9 @@ import UserForm from "./user/user-form/UserForm";
 import DoctorSignUp from "./doctor/sign-up/DoctorSignUp";
 import DoctorLogin from "./doctor/login/DoctorLogin";
 import DoctorHome from "./doctor/home/DoctorHome";
+import AdminLogin from "./admin/admin-login/AdminLogin";
+import AdminHome from "./admin/admin-home/AdminHome";
+import OrderForm from "./user/medicines/OrderForm"
 
 function App() {
   return (
@@ -31,6 +34,9 @@ function App() {
             <Route path="/medicine" Component={Medicines} />
           </Route>
           <Route>
+            <Route path="/order-form" Component={OrderForm} />
+          </Route>
+          <Route>
             <Route path="/category/:id" Component={Category} />
           </Route>
           <Route>
@@ -44,6 +50,12 @@ function App() {
           </Route>
           <Route>
             <Route path="/doctor-home" Component={DoctorHome} />
+          </Route>
+          <Route>
+            <Route path="/admin-login" Component={AdminLogin} />
+          </Route>
+          <Route>
+            <Route path="/admin-home" Component={AdminHome} />
           </Route>
         </Routes>
       </BrowserRouter>

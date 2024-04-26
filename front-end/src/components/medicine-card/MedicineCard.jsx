@@ -4,6 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function MedicineCard({ medicineData }) {
   return (
@@ -19,9 +20,9 @@ export default function MedicineCard({ medicineData }) {
           <Typography gutterBottom variant="span" component="div">
             {medicineData.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary"><button className="btn btn-primary consult" type="button">
+          <Typography variant="body2" color="text.secondary"><Link to={"/order-form"}><button className="btn btn-primary consult" type="button" >
           Buy Now
-        </button></Typography>
+        </button></Link></Typography>
         </CardContent>
       </CardActionArea>
     </Card>

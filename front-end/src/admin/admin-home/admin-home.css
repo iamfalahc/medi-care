@@ -1,0 +1,32 @@
+.doctor-home {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    text-align: center;
+  }
+  .doctor-home table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .doctor-home th,
+  .doctor-home td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    width: calc(100%/6);
+    text-align: center;
+  
+  }
+  
+  .doctor-home tbody tr:nth-child(even) {
+    background-color: #ebe8e8; 
+  }
+  
+  .doctor-home tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  .block-svg{
+    width: 30px;
+  }
