@@ -1,0 +1,21 @@
+.add-medicine-form-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 20px;
+  }
+  
+  .add-medicine-field-wrapper {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media only screen and (max-width: 600px) {
+    .add-medicine-field-wrapper {
+      width: 70%;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+  }

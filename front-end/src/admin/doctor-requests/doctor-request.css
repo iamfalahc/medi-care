@@ -1,0 +1,6 @@
+.doctor-request-card-container{
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

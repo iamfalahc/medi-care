@@ -1,0 +1,32 @@
+.medicine-order{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px;
+    text-align: center;
+  }
+  .medicine-order table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .medicine-order th,
+  .medicine-order td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    width: calc(100%/8);
+    text-align: center;
+  
+  }
+  
+  .medicine-order tbody tr:nth-child(even) {
+    background-color: #ebe8e8; 
+  }
+  
+  .medicine-order tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  .block-svg{
+    width: 30px;
+  }

@@ -12,6 +12,9 @@ import DoctorHome from "./doctor/home/DoctorHome";
 import AdminLogin from "./admin/admin-login/AdminLogin";
 import AdminHome from "./admin/admin-home/AdminHome";
 import OrderForm from "./user/medicines/OrderForm"
+import DoctorRequest from "./admin/doctor-requests/DoctorRequest";
+import AddMedicine from "./admin/add-medicine/AddMedicine";
+import MedicineOrders from "./admin/orders/MedicineOrders";
 
 function App() {
   return (
@@ -31,10 +34,10 @@ function App() {
             <Route path="/specialty" Component={Specialties} />
           </Route>
           <Route>
-            <Route path="/medicine" Component={Medicines} />
+            <Route path="/medicines" Component={Medicines} />
           </Route>
           <Route>
-            <Route path="/order-form" Component={OrderForm} />
+            <Route path="/medicine-order-form" Component={OrderForm} />
           </Route>
           <Route>
             <Route path="/category/:id" Component={Category} />
@@ -56,6 +59,15 @@ function App() {
           </Route>
           <Route>
             <Route path="/admin-home" Component={AdminHome} />
+          </Route>
+          <Route>
+            <Route path="/admin/doctor-requests" Component={DoctorRequest} />
+          </Route>
+          <Route>
+            <Route path="/admin/add-medicine" Component={AddMedicine} />
+          </Route>
+          <Route>
+            <Route path="/admin/medicine-orders" Component={MedicineOrders} />
           </Route>
         </Routes>
       </BrowserRouter>

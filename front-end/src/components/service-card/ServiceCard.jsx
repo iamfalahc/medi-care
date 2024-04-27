@@ -7,7 +7,7 @@ const handleNavigate=(id)=>{
   if (id===1) {
     navigate("/specialty")
   }else if(id===2){
-    navigate("/medicine")
+    navigate("/medicines")
   }
 }
 

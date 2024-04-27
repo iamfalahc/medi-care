@@ -50,7 +50,7 @@ const Form = () => {
             value={input.age}
             onChange={handleChange}
           />
-          <label htmlFor="patient-age">Age . . .</label>
+          <label htmlFor="patient-age">Gender . . .</label>
         </div>
         <div className="form-floating mb-3">
           <input
@@ -89,7 +89,7 @@ const Form = () => {
           <input
             type="date"
             className="form-control"
-            id="patient-date"
+            id="patient-booking-date"
             name="date"
             value={input.date}
             onChange={handleChange}
