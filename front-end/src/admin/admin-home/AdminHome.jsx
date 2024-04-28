@@ -84,7 +84,6 @@ const AdminHome = () => {
         </tbody>
       </table>
     </div>
-    <Footer/>
     </div>
   )
 }

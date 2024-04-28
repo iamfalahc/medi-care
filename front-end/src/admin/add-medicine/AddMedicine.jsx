@@ -95,7 +95,6 @@ const AddMedicine = () => {
         </form>
         <ToastContainer />
       </div>
-      <Footer/>
     </div>
   );
 };
