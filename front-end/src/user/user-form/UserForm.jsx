@@ -50,17 +50,7 @@ const Form = () => {
             value={input.age}
             onChange={handleChange}
           />
-          <label htmlFor="patient-age">Gender . . .</label>
-        </div>
-        <div className="form-floating mb-3">
-          <input
-            type="text"
-            className="form-control"
-            placeholder="Gender . . ."
-            name="gender"
-            value={input.gender}
-            onChange={handleChange}
-          />
+    
           <label htmlFor="patient-gender">Gender . . .</label>
         </div>
         <div className="form-floating mb-3">
