@@ -15,7 +15,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
 const pages = ["Specialty", "Medicines", "Join as a Doctor"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const settings = ["Profile","Logout"];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
