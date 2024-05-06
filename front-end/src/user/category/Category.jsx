@@ -14,7 +14,7 @@ const Category = () => {
       <Navbar />
       <div className="category-wrapper">
         {doctorsCardData.map((data) => {
-          return <DoctorCard data={data} key={data.id} />;
+          return <DoctorCard data={data} key={data.id} isPatientRequest={true} />;
         })}
       </div>
       <Footer />

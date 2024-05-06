@@ -3,7 +3,7 @@ export const serviceCardData = [
     id: 1,
     image:
       "https://i.pinimg.com/564x/5e/66/e4/5e66e464044b46aaf4dd383144ee308d.jpg",
-    title: "Instant video consultation",
+    title: "Book an appointment with you Doctor",
     subTitle: "Connect with doctors",
   },
   {

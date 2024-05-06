@@ -8,7 +8,6 @@ import Footer from "../../components/footer/Footer";
 const AddMedicine = () => {
   const [input, setInput] = useState({
     name: "",
-    title: "",
     place: "",
     description: "",
     price: "",
@@ -44,18 +43,8 @@ const AddMedicine = () => {
             />
             <label htmlFor="patient-name">Name . . .</label>
           </div>
-
-          <div className="form-floating mb-3">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Title . . ."
-              name="title"
-              value={input.title}
-              onChange={handleChange}
-            />
-            <label htmlFor="patient-gender">Title . . .</label>
-          </div>
+            
+         
 
           <div className="form-floating mb-3">
             <input

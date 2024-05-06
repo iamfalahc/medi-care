@@ -1,7 +1,7 @@
 import React from "react";
 import "./doctor-card.css";
 import { Link } from "react-router-dom";
-const DoctorCard = ({ data }) => {
+const DoctorCard = ({ data,isPatientRequest }) => {
   return (
     <div class="card" style={{ width: "18rem" }}>
       <img src={data.image} class="card-img-top" alt="..." />
@@ -11,9 +11,9 @@ const DoctorCard = ({ data }) => {
         <span class="card-text">{data.qualification}.</span>
         <span class="card-text">{data.experience}.</span>
         <span class="card-text">{data.charge}.</span>
-        <Link to={"/user-form"}>
+        <Link to={isPatientRequest ? "/user-form" : "/admin-home"}>
           <button class="btn btn-primary consult" type="button">
-            Book now
+          {isPatientRequest ? "Book now" : "Approve"}
           </button>
         </Link>
       </div>

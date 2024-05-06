@@ -11,7 +11,7 @@ const DoctorRequest = () => {
     <div className="doctor-request-card-container">
     {doctorsCardData.map((item)=>{
         return(
-            <DoctorCard data={item} key={item.id}/>
+            <DoctorCard data={item} key={item.id} />
 
         )
     })}
