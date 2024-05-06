@@ -36,7 +36,7 @@ const doctorSchema = new mongoose.Schema({
         trim:true
     },
     password:{
-        name:String,
+        type:String,
         required:true,
         trim:true
     },
