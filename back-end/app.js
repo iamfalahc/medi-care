@@ -8,6 +8,7 @@ const Doctor = require("./models/doctorModel")
 const Admin = require("./models/adminModel")
 const Product = require("./models/productModel")
 const Appointment = require("./models/appointmentModel")
+const buyerSchema = require("./models/buyerModel")
 
 
 const app = express()
@@ -22,6 +23,10 @@ app.get("/",(req,res)=>{
 // ROUTE TO FETCH ALL SPECIALTIES
 app.get("/specialties", (req, res) => {
     res.json("all specialties");
+  });
+// ROUTE TO FETCH ALL PRODUCTS
+app.get("/products", (req, res) => {
+    res.json("all products");
   });
 
 //GET DOCTORS BY SPECIALTY

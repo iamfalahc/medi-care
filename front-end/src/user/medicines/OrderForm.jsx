@@ -8,7 +8,6 @@ const OrderForm = () => {
   const [input, setInput] = useState({
     name: "",
     address: "",
-    place: "",
     pin: "",
     mobileNumber: "",
     date: "",
@@ -52,17 +51,7 @@ const OrderForm = () => {
           />
           <label htmlFor="patient-age">Address . . .</label>
         </div>
-        <div className="form-floating mb-3">
-          <input
-            type="text"
-            className="form-control"
-            placeholder="place . . ."
-            name="place"
-            value={input.place}
-            onChange={handleChange}
-          />
-          <label htmlFor="patient-gender">Place . . .</label>
-        </div>
+    
         <div className="form-floating mb-3">
           <input
             type="text"
