@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function MedicineCard({ medicineData }) {
   return (
-    <Card sx={{ maxWidth: 200 }}>
+    <Card className="medicine-card" sx={{ maxWidth: 200 }}>
       <CardActionArea>
         <CardMedia
           component="img"

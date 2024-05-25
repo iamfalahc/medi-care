@@ -1,0 +1,15 @@
+@media screen and (max-width:600px){
+    .medicine-card{
+        min-width: 300px;
+
+    }
+    .medicine-card img{
+        object-fit: contain;
+    }
+    .specialty-card{
+        min-width: 300px;
+    }
+    .specialty-card img{
+        object-fit: contain;
+    }
+}

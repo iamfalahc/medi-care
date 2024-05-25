@@ -10,8 +10,8 @@ export const serviceCardData = [
     id: 2,
     image:
       "https://media.istockphoto.com/id/851916612/vector/poster-city-landscape-with-fast-delivery-man-scooter-with-packages.jpg?s=612x612&w=0&k=20&c=f81NBEKmPuhzacnP9p6Kq4wlwyWDFDKauC6ZkbUXBxk=",
-    title: "Online medicines",
-    subTitle: "Buy medicines online",
+    title: "Quality Medicines and Medical Products.",
+    subTitle: "Buy products online",
   },
 ];
 export const specialtyCardData = [

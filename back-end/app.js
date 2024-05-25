@@ -10,7 +10,6 @@ const Product = require("./models/productModel")
 const Appointment = require("./models/appointmentModel")
 const buyerSchema = require("./models/buyerModel")
 
-
 const app = express()
 const port = 5000;
 connectDB()
@@ -53,7 +52,7 @@ app.post("/doctor/:id/appointment", async (req, res) => {
         if (!user) {
             return res.status(404).json({ message: "User not found" });
         }
-
+        
         // Create a new appointment record
         const newAppointment = new Appointment({
             userId: user._id, // Assuming user has a unique ID

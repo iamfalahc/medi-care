@@ -27,3 +27,28 @@
 .doctor-home tbody tr:nth-child(odd) {
   background-color: #ffffff;
 }
+@media screen and (max-width: 600px) {
+  .doctor-home {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    text-align: center;
+    padding: 0;
+  }
+  .doctor-home th,
+.doctor-home td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  /* padding: 8px; */
+  max-width: 50px;
+  text-align: center;
+
+}
+.token{
+  display: none;
+}
+.mobile-number{
+  display: none;
+}
+}
