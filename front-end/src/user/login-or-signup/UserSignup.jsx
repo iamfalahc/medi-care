@@ -1,129 +1,111 @@
-import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
-import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import {Link} from 'react-router-dom';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import React, { useState } from 'react';
+import { userNameSignUpValidation, userPasswordMatching, userSignUpPasswordValidation } from './validation';
+import './Form.css';
+import { Link } from 'react-router-dom';
 
-function Copyright(props) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+ const UserSignUp=()=> {
+  const [input, setInput] = useState({
+    userName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
 
-// TODO remove, this demo shouldn't need to reset the theme.
+  const [errors, setErrors] = useState({
+    userName: "",
+    password: "",
+    confirmPassword: ""
+  });
 
-const defaultTheme = createTheme();
-
-export default function SignUp() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-      confirmPassword:data.get('confirmPassword')
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setInput({
+      ...input,
+      [name]: value
     });
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const newErrors = {
+      userName: userNameSignUpValidation(input.userName),
+      password: userSignUpPasswordValidation(input.password),
+      confirmPassword: userPasswordMatching(input.password, input.confirmPassword)
+    };
+
+    setErrors(newErrors);
+
+    if (!newErrors.userName && !newErrors.password && !newErrors.confirmPassword) {
+      console.log({
+        userName: input.userName,
+        email: input.email,
+        password: input.password,
+        confirmPassword: input.confirmPassword
+      });
+    }
+  };
+
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
-        <Box
-          sx={{
-            marginTop: 8,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-          }}
-        >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            Sign up
-          </Typography>
-          <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
-            <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <TextField
-                  autoComplete="given-name"
-                  name="firstName"
-                  required
-                  fullWidth
-                  id="firstName"
-                  label="First Name"
-                  autoFocus
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="email"
-                  label="Email Address"
-                  name="email"
-                  autoComplete="email"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="password"
-                  label="Password"
-                  type="password"
-                  id="password"
-                  autoComplete="new-password"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="confirmPassword"
-                  label="confirm-Password"
-                  type="password"
-                  id="confirm-password"
-                  autoComplete="new-password"
-                />
-              </Grid>
-            </Grid>
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
-            >
-              Sign Up
-            </Button>
-            <Grid container justifyContent="center">
-              <Grid item>
-                <Link to={"/login"} variant="body2">
-                  Already have an account? Log in
-                </Link>
-              </Grid>
-            </Grid>
-          </Box>
-        </Box>
-        <Copyright sx={{ mt: 5 }} />
-      </Container>
-    </ThemeProvider>
+ 
+      <form className="form" onSubmit={handleSubmit}>
+        <h1>Sign Up</h1>
+        <div className="form-wrapper">
+        <div className="form-group">
+          <label htmlFor="userName">User Name</label>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            value={input.userName}
+            onChange={handleChange}
+            required
+          />
+          {errors.userName && <span className="error-message">{errors.userName}</span>}
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={input.email}
+            onChange={handleChange}
+            required
+          />
+          {errors.email && <span className="error-message">{errors.email}</span>}
+        </div>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            value={input.password}
+            onChange={handleChange}
+            required
+          />
+          {errors.password && <span className="error-message">{errors.password}</span>}
+        </div>
+        <div className="form-group">
+          <label htmlFor="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            value={input.confirmPassword}
+            onChange={handleChange}
+            required
+          />
+          {errors.confirmPassword && <span className="error-message">{errors.confirmPassword}</span>}
+        </div>
+        <button type="submit" className="submit-button">Sign Up</button>
+        </div>
+        <div className="login-link">
+          <span>Already have an account? </span>
+          <Link to={"/login"}>Log in</Link>
+        </div>
+      </form>
+  
   );
 }
+export default UserSignUp
