@@ -1,0 +1,86 @@
+.doctor-signup{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+.form-container .title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+}
+.field-group{
+    display: flex;
+    gap: 8px;
+}
+.field-group input{
+    padding: 6px;
+    border-radius: 4px;
+   border: 1px solid;
+}
+.cpassword-input{
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+.bottom-container button{
+    padding: 6px;
+    border-radius: 6px;
+    background: rgb(0, 123, 255);
+    border: none;
+    color: white;
+}
+
+        /* LOGIN PAGE CSS */
+
+.login-page{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 100px;
+    cursor: pointer;
+}
+.login-form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+}
+
+.login-form-container .title{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 200;
+}
+.login-form-container input{
+    padding: 6px;
+    width: 380px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+.doctor-login-btn{
+    padding: 6px;
+    border-radius: 6px;
+    background: rgb(0, 123, 255);
+    border: none;
+    color: white;
+
+}
+.login-page .bottom-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
